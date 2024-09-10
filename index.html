@@ -6,23 +6,30 @@
   <title>Selecciona un idioma</title>
   <style>
     body {
-
-      background-color: #a93e3e; 
+      background-color: #d0e7f9; /* Azul claro */
       font-family: Arial, sans-serif;
-      text-align: center;
+      margin: 0;
+      height: 100vh; /* Altura total de la ventana */
+      display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      display:flex;
+      text-align: center;
     }
-    h1 {
+    div {
+      text-align: center; /* Alinea el texto dentro del div */
+    }
+    h1, h2 {
       color: #333333;
+      margin: 0;
+    }
+    h2 {
+      margin-bottom: 20px; /* Espacio entre el subtítulo y los enlaces */
     }
     a {
       font-size: 18px;
-      color: #333333;
+      color: #0066cc;
       text-decoration: none;
-      margin: 10px;
+      margin: 0 15px;
     }
     a:hover {
       text-decoration: underline;
@@ -30,9 +37,13 @@
   </style>
 </head>
 <body>
-  <h1>Elige tu idioma</h1>
-  <h2>Select your language</h2>
-  <a href="https://drive.google.com/file/d/1HZTQJidd1luWPZEGPq5ZnVPjmuOqptPH/view?usp=drive_link" target="_blank">Español</a> | 
-  <a href="https://drive.google.com/file/d/1BRakPYicpCXTQ_AGMB3g7vvOO5HVxJFH/view?usp=drive_link" target="_blank">English</a>
+  <div>
+    <h1>Elige tu idioma</h1>
+    <h2>Select your language</h2>
+    <div>
+      <a href="https://drive.google.com/file/d/1HZTQJidd1luWPZEGPq5ZnVPjmuOqptPH/view?usp=drive_link" target="_blank">Español</a> | 
+      <a href="https://drive.google.com/file/d/1BRakPYicpCXTQ_AGMB3g7vvOO5HVxJFH/view?usp=drive_link" target="_blank">English</a>
+    </div>
+  </div>
 </body>
 </html>
