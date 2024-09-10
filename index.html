@@ -36,6 +36,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      padding: 20px;
     }
 
     h1, h2 {
@@ -59,6 +60,20 @@
     a:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
+
+    /* Media query para pantallas pequeñas (smartphones) */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      a {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -66,7 +81,6 @@
   <!-- Video de fondo -->
   <video autoplay muted loop>
     <source src="3191572-uhd_3840_2160_25fps.mp4" type="video/mp4">
-    <!-- Puedes agregar otros formatos como fallback -->
     Tu navegador no soporta la etiqueta de video.
   </video>
 
