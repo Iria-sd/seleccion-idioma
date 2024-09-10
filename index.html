@@ -16,12 +16,15 @@
     /* Estilos del video para que cubra toda la pantalla */
     video {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
       min-width: 100%;
       min-height: 100%;
+      width: auto;
+      height: auto;
       z-index: -1;
-      object-fit: cover; /* Hace que el video cubra todo sin distorsionar */
+      transform: translate(-50%, -50%); /* Centra el video */
+      object-fit: cover; /* Hace que el video cubra toda la pantalla sin distorsionar */
     }
 
     /* Estilos del contenido */
