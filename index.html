@@ -5,45 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selecciona un idioma</title>
   <style>
-    body {
-      background-color: #d0e7f9; /* Azul claro */
-      font-family: Arial, sans-serif;
+    /* Estilos para el video de fondo */
+    body, html {
       margin: 0;
-      height: 100vh; /* Altura total de la ventana */
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Estilos del video para que cubra toda la pantalla */
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover; /* Hace que el video cubra todo sin distorsionar */
+    }
+
+    /* Estilos del contenido */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      height: 100vh;
     }
-    div {
-      text-align: center; /* Alinea el texto dentro del div */
-    }
+
     h1, h2 {
-      color: #333333;
       margin: 0;
     }
+
     h2 {
-      margin-bottom: 20px; /* Espacio entre el subtítulo y los enlaces */
+      margin-bottom: 20px;
     }
+
     a {
       font-size: 18px;
-      color: #0066cc;
+      color: #fff;
       text-decoration: none;
       margin: 0 15px;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
     }
+
     a:hover {
-      text-decoration: underline;
+      background-color: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
-  <div>
+
+  <!-- Video de fondo -->
+  <video autoplay muted loop>
+    <source src="3191572-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    <!-- Puedes agregar otros formatos como fallback -->
+    Tu navegador no soporta la etiqueta de video.
+  </video>
+
+  <!-- Contenido de la página -->
+  <div class="content">
     <h1>Elige tu idioma</h1>
     <h2>Select your language</h2>
     <div>
-      <a href="https://drive.google.com/file/d/1HZTQJidd1luWPZEGPq5ZnVPjmuOqptPH/view?usp=drive_link" target="_blank">Español</a> | 
+      <a href="https://drive.google.com/file/d/1HZTQJidd1luWPZEGPq5ZnVPjmuOqptPH/view?usp=drive_link" target="_blank">Español</a> 
       <a href="https://drive.google.com/file/d/1BRakPYicpCXTQ_AGMB3g7vvOO5HVxJFH/view?usp=drive_link" target="_blank">English</a>
     </div>
   </div>
+
 </body>
 </html>
